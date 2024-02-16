@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Control</title>
+</head>
+<body>
+
+
+<h1 th:text="${'Head Count: ' + headCount}"></h1>
+
+<div th:if="${redSignal}">
+    <h2 style="color: red;">Traffic Signal: RED</h2>
+</div>
+<div th:unless="${redSignal}">
+    <h2 style="color: green;">Traffic Signal: GREEN</h2>
+</div>
+
+</body>
+</html>
+
